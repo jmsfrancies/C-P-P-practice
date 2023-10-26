@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<iostream>
+#include<cmath>
 /*
 *Libraries that are required to run the program
 */
@@ -18,8 +19,8 @@ int main(){
 	if (decision==1){
 		std::cout<<"What is the material thickness: ";
 		std::cin>>material_thickness;
-		tpi = 3/material_thickness;
-		printf("The tpi wth this is: %.2d\n", tpi);
+		tpi = round(3/material_thickness);
+		printf("The tpi wth the material thickness of %.3f is: %.2d\n",material_thickness,tpi);
 	}
 	/*Condition if the fraction has to be converted to decimal/metric.*/
 	if (decision==2){
@@ -28,8 +29,8 @@ int main(){
 		std::cout<<"What is the bottom number: ";
 		std::cin>>denominator;
 		material_thickness = (numerator/denominator);
-		tpi = 3/material_thickness;
-		printf("The tpi wth this is: %.2d\n", tpi);
+		tpi = round(3/material_thickness);
+		printf("The tpi wth the material thickness of %.3f is: %.2d\n",material_thickness,tpi);
 	}
 
 return 0;
