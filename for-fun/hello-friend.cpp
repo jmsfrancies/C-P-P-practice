@@ -1,5 +1,6 @@
 // Program that stores and prints the user's first and last name
 
+#include <string>
 #include <iostream>
 using namespace std;
 
@@ -13,6 +14,6 @@ int main() {
 	//second user input request, but for the last name
 	std::cout << "What is your last name: ";
 	std:cin >> lastname;
-	std::cout << "Hello " << firstname << " " << lastname << "!" << endl; 
+	printf("Hello %s %s!\n",firstname.c_str(),lastname.c_str());
 
 }
