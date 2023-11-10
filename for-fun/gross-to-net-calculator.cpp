@@ -16,25 +16,25 @@ int main(){
 	std::cin>>salary;
 	if(salary < 33000){
 		net = salary * 0.8;
-		monthly = salary / 12;
+		monthly = net / 12;
 		printf("You're net is $%'.2f\n", net);
 		printf("You're monthly net is $%'.2f\n", monthly);
 	}
 	else if(salary > 33000 and salary <= 60000){
 		net = salary * 0.726;
-		monthly = salary / 12;
+		monthly = net / 12;
 		printf("You're net is $%'.2f\n", net);
 		printf("You're monthly net is $%'.2f\n", monthly);
 	}
 	else if(salary > 60000 and salary <= 95000){
 		net = salary * 0.72;
-		monthly = salary / 12;
+		monthly = net / 12;
 		printf("You're net is $%'.2f\n", net);
 		printf("You're monthly net is $%'.2f\n", monthly);
 	}
 	if(salary > 95000){
 		net = salary * 0.65;
-		monthly = salary / 12;
+		monthly = net / 12;
 		printf("You're net is $%'.2f\n", net);
 		printf("You're monthly net is $%'.2f\n", monthly);
 	}
